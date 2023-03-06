@@ -1,44 +1,69 @@
+/*
+style.css
+porfolio
+
+TODO: 
+footer?
+better placeholders
+new section for list of technologies
+photo or avatar
+use better background
+about me stuff
+headings for each project
+    
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* dark color scheme variables */
-  --background-color-primary: #2d2d2d;
-  --foreground-color-primary: #d5d5d5;
-  --background-color-secondary: #222222;
+  --background-color-primary: #3b3b3b;
+  --background-color-secondary: #292929;
+  --foreground-color-primary: #e0e0e0;
   --foreground-color-secondary: #d2d2d2;
+}
+
+html {
+  background-image: repeating-radial-gradient(
+    circle at 0 0,
+    var(--background-color-primary),
+    var(--background-color-secondary) 12em
+  );
+  height: auto;
 }
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: var(--background-color-primary);
+  font-size: 1em;
+  line-height: 1.4em;
   color: var(--foreground-color-primary);
 }
 
 header {
   background-color: var(--background-color-secondary);
   color: var(--foreground-color-secondary);
-  padding: 20px;
-  margin-bottom: 10em;
+  padding: 1em;
   font-size: 1.2em;
+  line-height: 1.5em;
   display: flex;
   position: fixed;
   top: 0;
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
+  z-index: 5;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 nav li {
-  margin-right: 20px;
+  margin: 0 0.4em;
 }
 
 nav a {
@@ -47,20 +72,33 @@ nav a {
 }
 
 main {
-  max-width: 800px;
+  max-width: 49em;
   margin: 0 auto;
   margin-top: 5em;
   padding: 20px;
   text-align: center;
 }
 
+/* fix scrolling when fixed header + nav links */
+section::before {
+  display: block;
+  content: " ";
+  margin-top: -7em;
+  height: 7em;
+}
+
 section {
-  margin-bottom: 40px;
+  margin-bottom: 3em;
 }
 
 section h2 {
   font-size: 1.8em;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
+}
+
+#top-project {
+  display: flex;
+  margin: 1.5em auto;
 }
 
 .gallery {
@@ -75,26 +113,48 @@ section h2 {
   overflow: hidden;
 }
 
-.gallery img {
-  width: 100%;
+.gallery img,
+#top-project {
+  width: 90%;
   height: auto;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 
-.gallery img:hover {
-  transform: scale(1.1);
+.gallery img:hover,
+#top-project:hover {
+  transform: scale(1.05);
 }
 
 #contact a {
-  color: var(--foreground-color-primary);
+  color: var(--foreground-color-secondary);
+}
+
+#projects h3 {
+  font-size: 1.4em;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: var(--background-color-secondary);
 }
 
 @media only screen and (max-width: 768px) {
-  main {
-    padding: 20px 10px;
+  header {
+    display: block;
+    text-align: center;
   }
+
+  main {
+    margin-top: 7em;
+  }
+
+  section h2 {
+    font-size: 1.6em;
+  }
+
   .gallery a {
-    flex-basis: calc(100% - 10em);
-    margin:.5em auto;
+    flex-basis: calc(100% - 3em);
+    margin: 0.5em auto;
   }
 }
