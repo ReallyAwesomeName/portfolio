@@ -1,57 +1,102 @@
+<!--
+  index.html
+  portfolio
+  
+-->
+
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" href="./Assets/style.css">
-</head>
-<body>
-	<header>
-		<h1>Name</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason Geoghegan's Portfolio</title>
+    <link rel="stylesheet" href="./Assets/reset.css" />
+    <link rel="stylesheet" href="./Assets/style.css" />
+  </head>
 
-	<main>
-		<section id="about">
-			<h2>About Me</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nibh eget nisi fringilla euismod nec vel ex. Sed gravida interdum augue, sed varius lorem. Donec posuere arcu id purus congue aliquet. Suspendisse potenti. Proin eget malesuada tortor. In porta quam vel augue consectetur, in gravida augue faucibus. </p>
-		</section>
+  <body>
+    <header>
+      <h1>Jason Geoghegan</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-		<section id="portfolio">
-			<h2>My Portfolio</h2>
-			<div class="gallery">
-				<a href="#"><img src="image1.jpg" alt="Image 1"></a>
-				<a href="#"><img src="image2.jpg" alt="Image 2"></a>
-				<a href="#"><img src="image3.jpg" alt="Image 3"></a>
-				<a href="#"><img src="image4.jpg" alt="Image 4"></a>
-			</div>
-		</section>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nibh
+          eget nisi fringilla euismod nec vel ex. Sed gravida interdum augue,
+          sed varius lorem. Donec posuere arcu id purus congue aliquet.
+          Suspendisse potenti. Proin eget malesuada tortor. In porta quam vel
+          augue consectetur, in gravida augue faucibus.
+        </p>
+      </section>
 
-		<section id="contact">
-			<h2>Contact Me</h2>
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
+      <h2>Projects</h2>
+      <section id="projects">
+        <article class="card" id="top-project">
+          <h3>Pascal Like Simple Programming Language</h3>
+          <a href="https://github.com/ReallyAwesomeName/CS280/tree/master/PA3"
+            ><img src="./assets/images/plsl.png" alt="Image 1"
+          /></a>
+        </article>
+        <section id="other-projects">
+          <article class="card">
+            <h3>Another Project</h3>
+            <a href="#"
+              ><img src="http://via.placeholder.com/640x220" alt="Image 2"
+            /></a>
+          </article>
+          <article class="card">
+            <h3>Another Project</h3>
+            <a href="#"
+              ><img src="http://via.placeholder.com/640x220" alt="Image 3"
+            /></a>
+          </article>
+          <article class="card">
+            <h3>Another Project</h3>
+            <a href="#"
+              ><img src="http://via.placeholder.com/640x220" alt="Image 4"
+            /></a>
+          </article>
+          <article class="card">
+            <h3>Another Project</h3>
+            <a href="#"
+              ><img src="http://via.placeholder.com/640x220" alt="Image 4"
+            /></a>
+          </article>
+        </section>
+      </section>
 
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+          <li>
+            Email:
+            <a href="mailto:jgeoghegan95@gmail.com">jgeoghegan95@gmail.com</a>
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/ReallyAwesomeName">ReallyAwesomeName</a>
+          </li>
+          <li>
+            Discord:
+            <a href="https://discordapp.com/users/166640747133665281"
+              >Rin#0304</a
+            >
+          </li>
+          <li>LinkedIn:</li>
+        </ul>
+      </section>
+    </main>
 
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
-
-				<button type="submit">Send Message</button>
-			</form>
-		</section>
-	</main>
-
-	<footer>
-		<p>&copy; Name</p>
-	</footer>
-</body>
+    <footer>
+      <p>&copy; Name</p>
+    </footer>
+  </body>
 </html>
