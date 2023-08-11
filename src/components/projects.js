@@ -1,17 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 import ProjectCard from "./project-card";
-import { Card } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
-function Projects() {
+function ProjectsGrid() {
   return (
-    <section className="card-section">
-      <h2>Projects</h2>
-      <Card className="card-list">
-        <ProjectCard />
-      </Card>
-    </section>
+    <Container>
+      <Row xs={1} md={2} className="g-4" style={{ maxWidth: "80rem" }}>
+        {Array.from({ length: 4 }).map((_, idx) => (
+          <Col key={idx}>
+            <ProjectCard />
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
 
-export default Projects;
+export default ProjectsGrid;

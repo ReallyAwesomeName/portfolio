@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
 
 function ProjectCard() {
   return (
-    <Container>
-      <h2>Project Card!</h2>
-      <p>
-        Businesses partnering with us reduce food waste, increase revenue, and
-        contribute to a more sustainable future. Every portion saved is one less
-        wasted portion and one more step toward a better bottom line.
-      </p>
-      <Link to="/" className="cta-button">
-        Put link to repo here
-      </Link>
-    </Container>
+    <Card className="m-4" border="info">
+      <Card.Img variant="top" src="https://placehold.co/600x200/555555/eee" />
+      <Card.Body>
+        <Card.Title>Card title</Card.Title>
+        <Card.Text>
+          This is a longer card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 
