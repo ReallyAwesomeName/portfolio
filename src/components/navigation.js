@@ -2,8 +2,7 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import { useNavigate } from "react-router-dom";
 
-function Navigation(props) {
-  const { pages = [], currentPage, setCurrentPage } = props;
+function Navigation() {
   const navigate = useNavigate();
 
   const handleSelect = (eventKey) => {
@@ -21,13 +20,7 @@ function Navigation(props) {
         <Nav.Link eventKey="">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="about">About</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
         <Nav.Link eventKey="projects">Projects</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="contact">Contact</Nav.Link>
       </Nav.Item>
     </Nav>
   );

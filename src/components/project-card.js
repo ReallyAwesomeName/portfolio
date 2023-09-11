@@ -1,19 +1,40 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
-function ProjectCard() {
+function ProjectCard(props) {
+  const {
+    projectImage,
+    projectTitle,
+    projectDescription,
+    projectRepository,
+    projectDeployed,
+  } = props;
+
+  if (!projectTitle) {
+    return null;
+  }
+
   return (
     <Card className="m-4" border="info">
-      <Card.Img variant="top" src="https://placehold.co/600x200/555555/eee" />
+      {projectImage ? <Card.Img variant="top" src={projectImage} /> : null}
       <Card.Body>
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
-          This is a longer card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </Card.Text>
+        <Card.Title>{projectTitle}</Card.Title>
+        <hr></hr>
+        <Card.Text>{projectDescription}</Card.Text>
       </Card.Body>
+      <section className="mb-4">
+        {projectRepository ? (
+          <Button className="mx-2" variant="primary" href={projectRepository}>
+            Repository
+          </Button>
+        ) : null}
+        {projectDeployed ? (
+          <Button className="mx-2" variant="primary" href={projectDeployed}>
+            Deployment
+          </Button>
+        ) : null}
+      </section>
     </Card>
   );
 }
