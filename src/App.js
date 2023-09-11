@@ -1,14 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./components/about";
-import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Home from "./components/home";
 import Navigation from "./components/navigation";
-import Page from "./components/page";
 import Projects from "./components/projects";
 
 // error boundry
@@ -38,16 +34,8 @@ function App() {
       path: "/",
     },
     {
-      title: "about",
-      path: "/about",
-    },
-    {
       title: "projects",
       path: "/projects",
-    },
-    {
-      title: "Contact",
-      path: "/contact",
     },
   ]);
 
@@ -66,9 +54,7 @@ function App() {
             <hr />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
             </Routes>
           </Router>
         </Header>
