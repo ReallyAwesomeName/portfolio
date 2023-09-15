@@ -5,20 +5,21 @@ function Footer() {
     <div className="footer">
       <hr />
       <h2>Contact</h2>
-      <ul class="list-unstyled">
+      <ul className="list-unstyled">
         <li>
-          {"Email: "}
-          <a href="mailto:jgeoghegan95@gmail.com">jgeoghegan95@gmail.com</a>
+          <a href="mailto:jgeoghegan95@gmail.com">Email</a>
         </li>
         <li>
-          {"GitHub: "}
-          <a href="https://github.com/ReallyAwesomeName">ReallyAwesomeName</a>
+          <a href="https://github.com/ReallyAwesomeName">GitHub</a>
         </li>
         <li>
-          {"Discord: "}
-          <a href="https://discordapp.com/users/166640747133665281">Rin#0304</a>
+          <a href="https://discordapp.com/users/166640747133665281">Discord</a>
         </li>
-        <li>{"LinkedIn: "}</li>
+        <li>
+          <a href="https://www.linkedin.com/in/jason-geoghegan-841ba2264">
+            LinkedIn
+          </a>
+        </li>
       </ul>
     </div>
   );

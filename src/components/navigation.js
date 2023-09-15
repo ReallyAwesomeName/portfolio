@@ -12,12 +12,12 @@ function Navigation() {
   return (
     <Nav
       variant="underline"
-      defaultActiveKey={"home"}
+      defaultActiveKey={"about"}
       className="justify-content-center"
       onSelect={handleSelect}
     >
       <Nav.Item>
-        <Nav.Link eventKey="">Home</Nav.Link>
+        <Nav.Link eventKey="about">About</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link eventKey="projects">Projects</Nav.Link>
