@@ -1,16 +1,16 @@
 import React from "react";
-import Home from "./home";
+import About from "./about";
 import Projects from "./projects";
 
 function Page({ currentPage }) {
   const renderPage = () => {
     switch (currentPage.title) {
-      case "home":
-        return <Home />;
+      case "about":
+        return <About />;
       case "projects":
         return <Projects />;
       default:
-        return <Home />;
+        return <About />;
     }
   };
   return <section>{renderPage()}</section>;

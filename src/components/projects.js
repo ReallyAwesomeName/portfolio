@@ -57,14 +57,6 @@ const projects = [
     projectDeployed: null,
     activeWIP: false,
   },
-  {
-    projectImage: null,
-    projectTitle: null,
-    projectDescription: null,
-    projectRepository: null,
-    projectDeployed: null,
-    activeWIP: false,
-  },
 ];
 
 function ProjectsGrid() {

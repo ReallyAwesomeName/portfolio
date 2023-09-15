@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import Home from "./components/home";
+import About from "./components/about";
 import Navigation from "./components/navigation";
 import Projects from "./components/projects";
 
@@ -30,8 +30,8 @@ class ErrorBoundry extends React.Component {
 function App() {
   const [pages] = useState([
     {
-      title: "home",
-      path: "/",
+      title: "about",
+      path: "/about",
     },
     {
       title: "projects",
@@ -53,7 +53,7 @@ function App() {
             ></Navigation>
             <hr />
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
             </Routes>
           </Router>
