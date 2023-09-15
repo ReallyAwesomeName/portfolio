@@ -45,7 +45,8 @@ function App() {
     <div className="App">
       <ErrorBoundry>
         <Header>
-          <Router>
+          {/* basename required for single page app on gh-pages */}
+          <Router basename="/portfolio">
             <Navigation
               pages={pages}
               currentPage={currentPage}
