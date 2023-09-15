@@ -31,7 +31,7 @@ function App() {
   const [pages] = useState([
     {
       title: "about",
-      path: "/about",
+      path: "/",
     },
     {
       title: "projects",
@@ -53,7 +53,7 @@ function App() {
             ></Navigation>
             <hr />
             <Routes>
-              <Route path="/about" element={<About />} />
+              <Route path="/" element={<About />} />
               <Route path="/projects" element={<Projects />} />
             </Routes>
           </Router>
