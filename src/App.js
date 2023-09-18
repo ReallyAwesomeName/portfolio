@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import About from "./components/about";
@@ -46,7 +46,7 @@ function App() {
       <ErrorBoundry>
         <Header>
           {/* basename required for single page app on gh-pages */}
-          <Router basename="/portfolio">
+          <BrowserRouter basename="/portfolio">
             <Navigation
               pages={pages}
               currentPage={currentPage}
@@ -57,7 +57,7 @@ function App() {
               <Route path="/" element={<About />} />
               <Route path="/projects" element={<Projects />} />
             </Routes>
-          </Router>
+          </BrowserRouter>
         </Header>
 
         <main></main>

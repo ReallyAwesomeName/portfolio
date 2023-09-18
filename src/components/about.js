@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="about">
       <h1>About</h1>
-      <p>
+      <p className="container" style={{ maxWidth: "80rem" }}>
         I was an automotive technician for a few years but concluded it was not
         where I wanted to be. I found a passion for computing and programming
         and began my education in computer science. I now have a solid
