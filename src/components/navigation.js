@@ -12,7 +12,6 @@ function Navigation() {
   return (
     <Nav
       variant="underline"
-      defaultActiveKey={""}
       className="justify-content-center"
       onSelect={handleSelect}
     >

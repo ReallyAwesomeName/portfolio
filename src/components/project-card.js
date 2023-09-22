@@ -7,6 +7,7 @@ function ProjectCard(props) {
     projectImage,
     projectTitle,
     projectDescription,
+    projectTechnologies,
     projectRepository,
     projectDeployed,
   } = props;
@@ -19,7 +20,10 @@ function ProjectCard(props) {
     <Card className="m-4" border="info">
       {projectImage ? <Card.Img variant="top" src={projectImage} /> : null}
       <Card.Body>
-        <Card.Title>{projectTitle}</Card.Title>
+        <Card.Title style={{ textDecoration: "underline", fontWeight: "bold" }}>
+          {projectTitle}
+        </Card.Title>
+        <Card.Text>{projectTechnologies}</Card.Text>
         <hr></hr>
         <Card.Text>{projectDescription}</Card.Text>
       </Card.Body>
