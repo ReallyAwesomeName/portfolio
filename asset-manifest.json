@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.db798329.css",
-    "main.js": "/portfolio/static/js/main.7f99b30a.js",
+    "main.js": "/portfolio/static/js/main.1db31269.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/sustain-a-plate.png": "/portfolio/static/media/sustain-a-plate.fd4e208004de586847ea.png",
     "static/media/sights&sounds.png": "/portfolio/static/media/sights&sounds.168d51a424c360edf7c5.png",
     "static/media/achievement-unlocked.png": "/portfolio/static/media/achievement-unlocked.923e4bcfb0723767a005.png",
-    "static/media/password-generator.png": "/portfolio/static/media/password-generator.c95ece15f754b7799fd0.png",
     "static/media/plsl.png": "/portfolio/static/media/plsl.6cc9650f9ab599962b25.png",
     "index.html": "/portfolio/index.html",
     "main.db798329.css.map": "/portfolio/static/css/main.db798329.css.map",
-    "main.7f99b30a.js.map": "/portfolio/static/js/main.7f99b30a.js.map",
+    "main.1db31269.js.map": "/portfolio/static/js/main.1db31269.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db798329.css",
-    "static/js/main.7f99b30a.js"
+    "static/js/main.1db31269.js"
   ]
 }
